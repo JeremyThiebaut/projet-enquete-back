@@ -1,0 +1,31 @@
+### obtention de la naration
+GET http://localhost:3001/play/storytelling/1
+
+### obtention des questions par personnage
+GET http://localhost:3001/play/question/6
+
+### obtention un personnage
+GET http://localhost:3001/play/character/12
+
+### obtention une situation
+GET http://localhost:3001/play/situation/1
+
+##############################  #############################
+
+### 
+//GET http://localhost:5050/
+
+### 
+//POST http://localhost:5050/
+//Content-Type: application/x-www-form-urlencoded
+
+//name= info a donner
+//&position= autre info
+
+### modification 
+//PATCH http://localhost:5050/
+//Content-Type: application/x-www-form-urlencoded
+
+//name= info a donner
+//&position= autre info
+
