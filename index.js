@@ -15,10 +15,10 @@ function handleDisconnect() {
 
   con.connect(function (err) {
     if (err) {
-      console.log("Error connection to db");
+      // console.log("Error connection to db");
       setTimeout(handleDisconnect, 2000);
     } else {
-      console.log("Connection established");
+      // console.log("Connection established");
     }
   });
 
@@ -44,8 +44,9 @@ const userMiddleware = require("./app/middlewares/user");
 const app = express();
 
 const corsOptions = {
+  // origin: true,
   origin: "http://localhost:3000",
-  // origin: "http://obeach.jtdev.fr",
+  // origin: "https://obeach.jtdev.fr",
   optionsSuccesStatus: 200,
   credentials: true,
 };
