@@ -19,6 +19,8 @@ User.init(
   {
     sequelize,
     tableName: "user",
+    timestamps: false, // désactiver les timestamps
+    updatedAt: false, // désactiver le champ updatedAt
   }
 );
 

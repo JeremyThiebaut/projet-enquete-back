@@ -12,7 +12,9 @@ Character.init({
 
 }, {
     sequelize,
-    tableName: "character"
+    tableName: "character",
+    timestamps: false, // désactiver les timestamps
+    updatedAt: false, // désactiver le champ updatedAt
 });
 
 module.exports = Character;

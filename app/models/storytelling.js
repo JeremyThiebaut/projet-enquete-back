@@ -7,7 +7,9 @@ Storytelling.init({
     sentence: DataTypes.TEXT
 }, {
     sequelize,
-    tableName: "storytelling"
+    tableName: "storytelling",
+    timestamps: false, // désactiver les timestamps
+    updatedAt: false, // désactiver le champ updatedAt
 });
 
 module.exports = Storytelling;

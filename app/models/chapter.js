@@ -7,7 +7,9 @@ Chapter.init({
     name: DataTypes.TEXT
 }, {
     sequelize,
-    tableName: "chapter"
+    tableName: "chapter",
+    timestamps: false, // désactiver les timestamps
+    updatedAt: false, // désactiver le champ updatedAt
 });
 
 module.exports = Chapter;

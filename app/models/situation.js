@@ -7,7 +7,9 @@ Situation.init({
     
 }, {
     sequelize,
-    tableName: "situation"
+    tableName: "situation",
+    timestamps: false, // désactiver les timestamps
+    updatedAt: false, // désactiver le champ updatedAt
 });
 
 module.exports = Situation;

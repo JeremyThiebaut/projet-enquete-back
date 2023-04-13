@@ -7,7 +7,9 @@ Weapon.init({
     name: DataTypes.TEXT
 }, {
     sequelize,
-    tableName: "weapon"
+    tableName: "weapon",
+    timestamps: false, // désactiver les timestamps
+    updatedAt: false, // désactiver le champ updatedAt
 });
 
 module.exports = Weapon;

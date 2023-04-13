@@ -8,7 +8,9 @@ Place.init({
     picture: DataTypes.TEXT
 }, {
     sequelize,
-    tableName: "place"
+    tableName: "place",
+    timestamps: false, // désactiver les timestamps
+    updatedAt: false, // désactiver le champ updatedAt
 });
 
 module.exports = Place;

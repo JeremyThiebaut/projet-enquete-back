@@ -7,7 +7,9 @@ Question.init({
     answer: DataTypes.TEXT
 }, {
     sequelize,
-    tableName: "question"
+    tableName: "question",
+    timestamps: false, // désactiver les timestamps
+    updatedAt: false, // désactiver le champ updatedAt
 });
 Question.getForSituationAndCharacter = async (SituationId, CharacterIds) => {
     return Question.findAll({where : {

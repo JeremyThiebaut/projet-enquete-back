@@ -5,17 +5,23 @@ const sequelize = new Sequelize(
   // "eqlv1148_enquete", //database
   // "eqlv1148_enquete", //user
   // "obeachdb", //password
-  "enquete",
-  "root",
-  "",
+
+  // "enquet",
+  // "root",
+  // "",
+
+  process.env.DB_TABLE,
+  process.env.DB_TABLE,
+  process.env.DB_PWD,
+
   {
-    dialect: "mysql",
+    dialect: "postgres",
     host: process.env.DB_HOST,
     // host: process.env.PG_URL,
-    define: {
-      underscored: true,
-      timestamps: false,
-    },
+    // define: {
+    //   underscored: true,
+    //   timestamps: false,
+    // },
   }
 );
 
