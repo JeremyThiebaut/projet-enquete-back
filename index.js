@@ -46,8 +46,8 @@ const app = express();
 const corsOptions = {
   // origin: true,
   // origin: "http://localhost:3000",
-  // origin: "https://obeach.jtdev.fr",
-  origin: process.env.DB_URL,
+  origin: "https://obeach.jtdev.fr",
+  // origin: process.env.DB_URL,
   optionsSuccesStatus: 200,
   credentials: true,
 };
