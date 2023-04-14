@@ -11,9 +11,6 @@
             "dest": "/index.js"
         }
     ],
-    "rewrites": [
-        { "source": "/(.*)", "destination": "src/app.js" }
-    ],
     "headers": [
         {
             "source": "/api/(.*)",
@@ -25,7 +22,7 @@
             ]
           },
           {
-            "source": "/api/vercel_app_domain_name/(.*)",
+            "source": "/api/obeach.jtdev.fr/(.*)",
             "headers": [
               { "key": "Access-Control-Allow-Credentials", "value": "true" },
               { "key": "Access-Control-Allow-Origin", "value": "https://obeach.jtdev.fr" },
