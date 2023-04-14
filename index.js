@@ -46,7 +46,7 @@ const app = express();
 const corsOptions = {
   // origin: true,
   // origin: "http://localhost:3000",
-  origin: "https://projet-enquete-front-rlyusyjfl-jeremythiebaut.vercel.app/",
+  origin: "https://obeach.jtdev.fr",
   // origin: process.env.DB_URL,
   optionsSuccesStatus: 200,
   credentials: true,
@@ -76,7 +76,7 @@ app.use(router);
 
 app.use(function(req, res, next) {
       // res.header("Access-Control-Allow-Origin", "*");
-      const allowedOrigins = ['https://projet-enquete-front-rlyusyjfl-jeremythiebaut.vercel.app/'];
+      const allowedOrigins = ['https://obeach.jtdev.fr'];
       const origin = req.headers.origin;
       if (allowedOrigins.includes(origin)) {
            res.setHeader('Access-Control-Allow-Origin', origin);
